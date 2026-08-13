@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Products</title>
+
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">ShopEase</h1>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a></li>
+        </ul>
+
+        <button id="theme-btn">🌙</button>
+    </nav>
+</header>
+
+<main class="container">
+
+    <h2 class="section-title">Our Products</h2>
+
+    <div class="filter-box">
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search products..."
+        >
+
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="home">Home</option>
+        </select>
+    </div>
+
+    <div id="product-list" class="product-grid"></div>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 ShopEase. All Rights Reserved.</p>
+</footer>
+
+<script src="Js/app.js"></script>
+<script src="Js/theme.js"></script>
+<script src="Js/products.js"></script>
+
+</body>
+</html>
